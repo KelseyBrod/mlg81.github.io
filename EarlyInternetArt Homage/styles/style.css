@@ -1,0 +1,134 @@
+*{   
+    padding-bottom: 10px; 
+}
+
+body{
+    background-color:rgb(78, 0, 0);
+    color:rgb(255, 255, 255);
+    font-family: "Sofia", sans-serif;
+    line-height: 15px;
+}
+
+#table{
+    display: inline-block;
+}
+
+#fashion{
+    background-image: url("../images/paparazzi\ gif.gif");
+    background-size: cover;
+    color: #edf1bdd3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+#fancy{
+    background-image: url("../images/pretty\ water\ gif.gif");
+    background-size: cover;
+    color:rgb(140, 15, 198);
+    font-family: "Dancing Script";
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+.container{
+    width: 1250px;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 290px;
+    height: 290px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box.imgBox{
+    position: relative;
+}
+
+.container .box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgBox img{
+    transform: scale(1.05);
+    transition: transform 1s;
+}
+
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,8);
+    transform: scaleY(0);
+    transform: transform .5s;
+}
+
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+
+.container .box .details .content{
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .box .details .content h2{
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+
+.container .box .details .content p{
+    margin:10px 0 0;
+    padding: 0;
+}
+
+
+button{
+    background-color: rgb(0, 0, 0);
+    border: 2px double #ffffff;
+    color: white;
+    font-size: 28px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+}
+
+ button:hover {
+    border: 2px double #ffffff;
+    background: rgb(255, 21, 0);
+    box-shadow: 0px 0px 1px #777;
+   }
+
+.unsilence{
+    font-family:"Anton", sans-serif;
+    line-height: 2px;
+
+}
+
+.center {
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+
