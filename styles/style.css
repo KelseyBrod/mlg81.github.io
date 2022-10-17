@@ -9,7 +9,7 @@ body{
 
 .home{
     text-align: center;
-    background-image: url("../mlg81.github.io/images/Cupcake-Background.jpeg");
+    background-image: url("../images/Cupcake-Background.jpeg");
     background-size: cover;
     margin: 50px;
     color: rgb(147, 89, 107);
@@ -37,7 +37,7 @@ body{
 }
 
 .button{
-    background-image: url("images/Floral-Button.jpeg") ;    
+    background-image: url("../images/Floral-Button.jpeg") ;    
     background-size: 350px;
     border: 2px #ffffff;
     color: rgb(147, 89, 107);
