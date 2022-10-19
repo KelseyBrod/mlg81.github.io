@@ -1,0 +1,136 @@
+html{
+    box-sizing:border-box; 
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    padding: 1rem;
+}
+
+.home{
+    text-align: center;
+    background-image: url("../images/Cupcake-Background.jpeg");
+    background-size: cover;
+    margin: 50px;
+    color: rgb(147, 89, 107);
+}
+
+.title{
+    font-size: 60px;
+    color: rgb(147, 89, 107);
+    -webkit-text-stroke: .5px rgb(147, 89, 107);
+    text-shadow: 3px 3px #fbfbfb;
+    font-weight: bold;
+}
+
+.backdrop{
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.flex-container-home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.button{
+    background-image: url("../images/Floral-Button.jpeg") ;    
+    background-size: 350px;
+    border: 2px #ffffff;
+    color: rgb(147, 89, 107);
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 340px;
+    height: 150px;
+}
+
+ .button:hover {
+    border: 2px double #ffffff;
+    color: white;
+    background: rgb(93, 124, 88);
+   }
+
+.one img{
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.two img{
+    clear: left;
+    float: right;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cleared{
+    clear: right;
+}
+
+.code{
+    color:rgb(71, 143, 224);
+}
+
+.pagetwo{
+    background-color: rgb(254, 241, 252);
+}
+
+.pagethree{
+    background-color: rgb(254, 241, 252);
+}
+
+.pagefour{
+    background-color: rgb(254, 241, 252);
+}
+
+.hint{
+    color: rgb(100, 176, 176);
+}
+
+.flex-container{
+    background-color: rgb(155, 219, 219);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.cupcake{
+    margin:10px;
+}
+
+.monthly-cupcake{
+    background-color: rgb(147, 89, 107);
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+    text-align: center;
+}
+.monthly-cupcakes{
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: 100%;
+    gap: 1rem;
+}
+@media (min-width: 600px){
+    .monthly-cupcakes { grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 900px){
+    .monthly-cupcakes { 
+        grid-template-columns: repeat(3, 1fr); 
+ }
+}
+.center{
+    margin: auto;
+    width: 50%;
+}
