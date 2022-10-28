@@ -5,10 +5,40 @@
         <meta charset="UTF-8" lang = "en" dir="ltr">
         <meta name="author" content ="Melinda Guo">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Melinda Guo: Portfolio</title>
+        <title>Custom Countdown</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
         <link href="styles/style.css" type="text/css" rel="stylesheet">
     </head>
+
     <body>
-        
+        <h1 style="color:rgb(75, 19, 116)">Custom Countdown</h1>
+        <form id="formData" onsubmit="event.preventDefault();">
+            <fieldset>
+                <label>Event Name  </label><input type="text" name="event"><br>
+                <br>
+                <label>Date  </label><input type="date" name="date" ><br>
+                <br>
+                <label>Time  </label><input type="time" name="time"><br>
+                <br>
+                <label>Background Color  </label><input type="color" name="backcolor"><br>
+                <br>
+                <label>Text Color  </label><input type="color" name="textcolor"><br>
+                <br>
+                <label>Celebration Message </label><input type="text" name="message"><br>
+                <br>
+                <label>Celebration Icon  </label>
+                    <select name="icon" id="icons">
+                        <option value="disco ball">disco ball</option>
+                        <option value="star">star</option>
+                        <option value="party popper">party popper</option>
+                        <option value="happy emoji">happy emoji</option>
+                    </select>
+                <br><br>
+                <button id="submit">Submit</button>
+            </fieldset>
+        </form>
+        <p id="title"></p>
+        <p id="time-left"></p>
+        <script src ="scripts/script.js"></script>
     </body>
+</html>
