@@ -4,14 +4,10 @@
     line-height: 2 rem; 
 }
 
-:root{
-    background-color: white;
-    color: black;
-}
-
 fieldset{
     background-color: rgb(184, 186, 242);
     border:none;
+    border-radius: 5px;
     padding: 30px;
 }
 
@@ -68,4 +64,9 @@ p{
 .container{
     display: inline-flex;
     text-align: left;
+}
+
+#timer{
+    padding: 10px; 
+    border-radius: 5px;
 }

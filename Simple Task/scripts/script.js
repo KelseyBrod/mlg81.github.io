@@ -45,8 +45,9 @@ function countDown() {
     //print starting countdown
     timeLeft.innerHTML = days + " : " + hours + " : " + minutes +  " : " + seconds
 
+    //change event title to final message with icons
     if (days==0, hours==0, minutes==0, seconds==0) {
-        title.innerHTML = message
+        title.innerHTML = icon + message + icon
     }
 }
 
@@ -61,26 +62,19 @@ submitBtn.addEventListener("click", event => {
     message = formData.elements.namedItem("message").value;
     icon = formData.querySelector("#icons").value;
 
-    //change colors on submit
-    var store = document.querySelector(":root");
-    function gettextcolor(store);
-    var textcolor = getComputedStyle(store);
-
-    function settextcolor(){
-        store.style.setProperty("color", "textcolor")
-    }
-
+    document.getElementById("timer").style.backgroundColor = backcolor;
+    document.getElementById("time-left").style.color = textcolor;
+    document.getElementById("title").style.color = textcolor;
 
     //display event title on submit
-    title.innerHTML = event
+    title.innerHTML = event; 
 
     //countdown timer starts on submit
-    let timerId
-    timerId = setInterval(countDown, second)
-    console.log(timerId)
-    console.log(timerId.type)
-
-
+    let timerId;
+    timerId = setInterval(countDown, second);
+    console.log(timerId);
+    console.log(timerId.type);
+    
 });
 
 
