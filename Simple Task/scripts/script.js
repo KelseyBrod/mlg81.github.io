@@ -47,10 +47,10 @@ function countDown() {
 
     //change event title to final message with icons
     if (days==0, hours==0, minutes==0, seconds==0) {
-        title.innerHTML = icon + message + icon
+        title.innerHTML = message 
     }
 }
-
+ego 
 //display countdown timer on submit
 let submitBtn = document.getElementById("submit");
 

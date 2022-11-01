@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    background-color:#001545;
+    font-family: Open Sans, Helvetica Neue, sans-serif;
+    color: white;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.affiliation{
+    flex: 0 0 100%;
+}
+
+.navlinks{
+    flex: 1 0 100px;    
+  }
+
+.navlinks .login{
+    font-weight: normal;
+}  
+
+.navlinks a{
+    display: inline-block;
+    padding: 0px 35px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:visited {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+/* Change the color of links on hover */
+.navlinks li a:hover {
+    color: #FFD960;
+    text-decoration: none;
+}
+  
+/* Add a color to the active/current link */
+.navlinks li a.active {
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+#button{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 5px 15px; 
+    background-color: #4259F6;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+  
+#button:hover{
+    background-color: #394eda;
+    text-decoration:none;
+}
+
+  
