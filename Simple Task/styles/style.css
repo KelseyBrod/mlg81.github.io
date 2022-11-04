@@ -4,6 +4,10 @@
     line-height: 2 rem; 
 }
 
+h1{
+    text-align: center;
+}
+
 fieldset{
     background-color: rgb(184, 186, 242);
     border:none;
@@ -60,13 +64,13 @@ p{
     border: 0px;
     padding: 0px;
 }
-
+  
 .container{
     display: inline-flex;
     text-align: left;
 }
 
 #timer{
-    padding: 10px; 
+    padding: 50px 200px; 
     border-radius: 5px;
 }

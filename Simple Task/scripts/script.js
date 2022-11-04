@@ -1,19 +1,11 @@
-//user input 
-let formData = document.getElementById("formData");
-let event = formData.elements.namedItem("event").value;
-let date = formData.elements.namedItem("date").value;
-let time = formData.elements.namedItem("time").value;
-let backcolor = formData.elements.namedItem("backcolor").value;
-let textcolor = formData.elements.namedItem("textcolor").value;
-let message = formData.elements.namedItem("message").value;
-let icon = formData.querySelector("#icons").value;
-
+//user input
 const timeLeft = document.getElementById("time-left")
 
 const second = 1000
 const minute = second * 60
 const hour = minute * 60
 const day = hour * 24
+
 
 //countdown timer function (referenced https://www.youtube.com/watch?v=V-Mcul5kS_Y)
 function countDown() {
@@ -47,10 +39,38 @@ function countDown() {
 
     //change event title to final message with icons
     if (days==0, hours==0, minutes==0, seconds==0) {
-        title.innerHTML = message 
+        title.innerHTML = message;
+
+        var prevImage = document.getElementById("image");
+        if(prevImage != null) {
+            prevImage.parentNode.removeChild(prevImage);
+        }
+    
+        //add icons 
+        var img = document.createElement('img'); 
+        img.style.width = '40px';
+        img.style.height = '40px';
+        img.id = "image";
+
+        if(icon == "disco ball"){
+            img.src = "images/icons/discoball.png"
+            document.getElementById('title').append("          ",img);
+        } 
+        else if(icon == "star"){
+            img.src = "images/icons/star.png"
+            document.getElementById('title').append("          ",img);
+        }   
+        else if(icon == "party popper"){
+            img.src = "images/icons/partypopper.png"
+            document.getElementById('title').append("          ",img);
+        }   
+        else if(icon == "happy emoji"){
+            img.src = "images/icons/happyemoji.png"
+            document.getElementById('title').append("          ",img);
+        }  
     }
 }
-ego 
+
 //display countdown timer on submit
 let submitBtn = document.getElementById("submit");
 
@@ -66,15 +86,21 @@ submitBtn.addEventListener("click", event => {
     document.getElementById("time-left").style.color = textcolor;
     document.getElementById("title").style.color = textcolor;
 
+    //icontxt = icon;
+
     //display event title on submit
     title.innerHTML = event; 
 
     //countdown timer starts on submit
     let timerId;
     timerId = setInterval(countDown, second);
-    console.log(timerId);
-    console.log(timerId.type);
+
+    var prevImage = document.getElementById("image");
+        if(prevImage != null) {
+            prevImage.parentNode.removeChild(prevImage);
+        }
     
+        
 });
 
 
