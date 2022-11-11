@@ -1,0 +1,201 @@
+*{
+    box-sizing:border-box;
+    margin: 15px;
+    padding: 0px;
+    border: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+ nav{
+    display: flex;
+    top:0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    height: auto;
+ }
+
+ .left-links{
+    flex:1 1 200px;
+
+ }
+ .links {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 25px 25px 12px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: normal;
+ }
+ .links:hover {
+    color: rgb(164, 100, 100)
+ }
+ .selected{
+    color: rgb(164, 100, 100)
+ }
+
+.intro {
+    padding: 70px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: .75em;
+}
+
+#poppins{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: 50px;
+    line-height: 2em;
+}
+
+#breathing{
+    font-family: 'Breathing Personal Use', sans-serif;
+    font-size: 25px;
+    line-height: 2em;
+}
+
+#playground{
+   text-align: center;
+   font-family: 'Libre Caslon Text', serif;
+   font-size: 50px;
+   font-weight:300;
+   line-height: 2em;
+}
+
+.headshot{
+   float: left;
+   padding: 0px 50px 0px 130px;
+}
+
+.about{
+   padding: 15px 130px 0px 0px;
+   font-size: 16px;
+   line-height: 2em;
+}
+
+.librecaslon{
+   font-family: 'Libre Caslon Text', serif;
+   font-size: 50px;
+   font-weight:300;
+   line-height: 2em;
+   }
+
+.name{
+   color: rgb(164, 100, 100);
+   font-family: 'Libre Caslon Text', serif;
+   font-size: 50px;
+   font-weight:300;
+   line-height: 2em;
+}
+
+.quote{
+   font-weight: bold;
+   line-height: 2em;
+}
+
+/* main page grid !! */
+
+.project-img {
+  width: 100%; 
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+ }
+
+ h2 {
+   margin-bottom: .5em;
+ }
+
+ .grid-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+ }
+ 
+ 
+ /* hover styles */
+ .project {
+   position: relative;
+ }
+ 
+ .project-image {
+   line-height: 0;
+   overflow: hidden;
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+ }
+ 
+ .project-image img {
+   filter: blur(0px);
+   transition: filter 0.3s ease-in;
+   transform: scale(1.1);
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+ }
+ 
+ .project-title {
+   font-size: 1.5em;
+   font-weight: bold;
+   text-decoration: none;
+   z-index: 1;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: opacity .5s;
+   background: rgba(65, 65, 65, 0.9);
+   color: white;
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+   
+   /* position text in middle*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .project:hover .project-title {
+   opacity: 1;
+ }
+ 
+ .project:hover .project-image img {
+   filter: blur(2px);
+ }
+ 
+/*photo gallery*/
+.flex-container{
+  display: flex;
+}
+.photo{
+  flex: 1 1 auto;
+}
+
+/*dark mode*/
+
+.darkToggle {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+}
+
+.darkToggle:checked {
+  background: rgb(53, 53, 53);
+}
+
+.dark {
+  color: white;
+  background: rgb(0, 0, 0);
+}
