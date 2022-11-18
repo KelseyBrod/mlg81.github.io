@@ -4,50 +4,122 @@
     padding: 0px;
     border: 0px;
     font-family: "Open Sans", sans-serif;
+
+    animation: fadeInAnimation ease 2s;
 }
 
- nav{
-    display: flex;
-    top:0px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    overflow: auto;
-    height: auto;
- }
+html{scroll-behavior:smooth}
 
- .left-links{
-    flex:1 1 200px;
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+  /*inspired by Allison! https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+}
 
- }
- .links {
-    display: inline-block;
-    text-align: center;
-    padding: 0px 25px 25px 12px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: normal;
- }
- .links:hover {
-    color: rgb(164, 100, 100)
- }
- .selected{
-    color: rgb(164, 100, 100)
- }
+div.twomode-toggle{
+  margin: 0px;
+  height: 20px;
+}
+
+div#toggle.toggle-item{
+  margin:0px;
+}
+
+.twomode-toggle{
+  display: flex;
+}
+
+img{
+  margin: 5px 10px;
+}
+
+.toggle-item{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  flex: 0 1 50px;
+}
+
+body{
+  background: white;
+  color: black;
+  transition: 0.5s;
+}
+
+
+body.active{
+  background:rgb(16, 16, 16);
+  color: white;
+  transition: 0.5s;
+}
+
+nav{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  display: flex;
+  top:0px;
+  width: 100%;
+  overflow: auto;
+  height: auto;
+}
+
+.left-links{
+  flex:1 1 200px;
+}
+
+.links {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 25px 25px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.links .active{
+  color:white;
+}
+
+/* .links:visited{
+  color: black;
+} */
+
+.links .active:visited{
+  color: white;
+}
+
+#selected{
+  color:rgb(164, 100, 100);
+}
+
+.links:hover {
+  color: rgb(164, 100, 100);
+}
 
 .intro {
-    padding: 70px 0;
+    padding: 70px 0px 90px 0px;
     text-align: center;
     font-size: 14px;
     line-height: .75em;
 }
 
+#landing-poppins{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: .2em;
+  font-size: 50px;
+  line-height: 2em;
+}
+
 #poppins{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    letter-spacing: .2em;
-    font-size: 50px;
-    line-height: 2em;
+    font-size: 40px;
 }
 
 #breathing{
@@ -56,12 +128,22 @@
     line-height: 2em;
 }
 
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+svg:hover {
+  fill: rgb(135, 60, 60);
+}
+
 #playground{
    text-align: center;
    font-family: 'Libre Caslon Text', serif;
    font-size: 50px;
    font-weight:300;
    line-height: 2em;
+   padding-bottom: 40px;
 }
 
 .headshot{
@@ -172,30 +254,63 @@
    filter: blur(2px);
  }
  
+/* banner */
+div.banner{
+  margin: 0px;
+}
+
 /*photo gallery*/
-.flex-container{
-  display: flex;
-}
-.photo{
-  flex: 1 1 auto;
+div.gallery#gallery{
+  margin: auto;
+  width: 100%;
 }
 
-/*dark mode*/
+/*dark mode toggle*/
 
-.darkToggle {
-  appearance: none;
-  width: 30px;
-  height: 30px;
-  background: white;
-  border-radius: 5px;
-  border: 2px solid #555;
+#toggle{
+  position:relative;
+  display: block;
+  margin: 0px 45px;
+  padding: 0px;
+  border: 30px;
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  background: rgb(200, 200, 200);
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.darkToggle:checked {
-  background: rgb(53, 53, 53);
+#toggle .active{
+  margin: 0px 45px;
+  padding: 0px;
+  left: 25px;
+  background: rgb(100, 100, 100);
+  transition: 0.5s;
 }
 
-.dark {
-  color: white;
-  background: rgb(0, 0, 0);
+#toggle .indicator{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: 0.5s;
 }
+
+#toggle.active .indicator{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  left: 25px;
+  background: rgb(90, 90, 90);
+  transition: 0.5s;
+} 

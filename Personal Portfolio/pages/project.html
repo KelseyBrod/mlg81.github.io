@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <meta name="author" content ="Melinda Guo">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Melinda Guo</title>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">   
+        <link href='https://fonts.googleapis.com/css?family=Libre Caslon Text' rel='stylesheet'>
+        <link href="../styles/style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- light/dark mode toggle -->
+        <div class="twomode-toggle">
+            <div class="toggle-item">
+                <img width="18" height="18" src="../images/sun.png" alt="light mode sun">  </a>
+            </div>
+            <div class="toggle-item" id="toggle">
+                <i class="indicator"></i>   
+            </div>
+            <div class="toggle-item">
+                <img width="20" height="20" src="../images/moon.svg" alt="dark mode moon">  </a>
+            </div>
+        </div>
+
+        <!-- nav bar -->
+        <nav>
+            <div class="left-links">
+                <a class="links" href="../index.html">Melinda Guo</a>
+            </div>
+            <div class="right-links">
+                <a class="links" href="../index.html">Work</a>
+                <a class="links" href="play.html">Play</a>
+                <a class="links" href="#">About Me</a>
+                <a class="links" href="https://www.linkedin.com/in/melindaguo/">LinkedIn</a>        
+            </div>
+        </nav>
+        <div class="banner"><img src="../images/Appian KYC Banner.png" alt="Appian KYC Banner" width=1350px height=450px; object-fit: cover; object-position: 50% 50%></div>
+        <div>
+            <h1 id="poppins">Case Study: Appian | Connected KYC </h1>
+            <p>Description of project.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <script>
+            const body = document.querySelector('body');
+            const linksarray = [];
+            const toggle = document.getElementById('toggle');
+            const links = document.getElementsByClassName('links');
+
+            toggle.onclick = function(){
+                toggle.classList.toggle('active');
+                body.classList.toggle('active');
+                for (let i = 0; i < links.length; i++) {
+                    links[i].classList.toggle('active');
+                    console.log("here");
+                }
+            }
+        </script>
+    </body>
+</html>
