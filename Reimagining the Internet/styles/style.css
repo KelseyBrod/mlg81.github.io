@@ -1,0 +1,118 @@
+
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.firstpgbody{
+    padding: 50px;
+    padding-bottom: 0px;
+    background-image: url("../images/Accessible\ Places\ Cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.secondpgbody{
+    padding: 70px;
+    font-size: 35px;
+}
+
+p{
+    padding: 20px 0px;
+}
+
+.p3p{
+    padding-top: 50px;
+}
+
+mark {
+    background-color: rgb(185, 228, 248);
+}
+
+.p1h1{
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color:rgb(51,112,231);
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.p2h1{
+    padding-bottom: 30px;
+    color:rgb(51,112,231);
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.p3h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color:rgb(51,112,231);
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.explore-button{
+    background: rgb(51,112,231);
+    color: white;
+    border: 2px solid;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 150px;
+}
+
+.explore-button:hover {
+    background-color:white;
+    border-color: rgb(51,112,231);
+    color: rgb(51,112,231);
+}
+
+
+.continue-button{
+    background: rgb(51,112,231);
+    color: white;
+    border: 2px solid;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 150px;
+    float: right;
+}
+
+.continue-button:hover {
+    background-color:white;
+    border-color: rgb(51,112,231);
+    color: rgb(51,112,231);
+   }
+
+.button{
+    padding-top: 150px;
+}
+
+.view-button{
+    background: rgb(51,112,231);
+    color: white;
+    border: 2px solid;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 300px;
+    float: right;
+}
+
+.view-button:hover {
+    background-color:white;
+    border-color: rgb(51,112,231);
+    color: rgb(51,112,231);
+   }
+
+i{
+    font-weight: light;
+}

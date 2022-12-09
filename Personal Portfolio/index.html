@@ -18,7 +18,7 @@
             <div class="toggle-item">
                 <img width="18" height="18" src="images/sun.png" alt="light mode sun">  </a>
             </div>
-            <div class="toggle-item" id="toggle">
+            <div class="toggle-item" id="toggle" onclick="toggleGO()">
                 <i class="indicator"></i>   
             </div>
             <div class="toggle-item">
@@ -54,6 +54,7 @@
             <br>
             <br>
             <p>Currently Duke '23</p>
+            <!-- why not put this in an element with padding instead of using breaks? -->
             <p>Recently @ Appian</p>
             <br>
             <br>
@@ -100,20 +101,35 @@
         <script>
             // dark and light mode toggle tutorial:  https://www.youtube.com/watch?v=gzCUq_VQ7Y8 
 
-            const body = document.querySelector('body');
-            const linksarray = [];
-            const toggle = document.getElementById('toggle');
-            const links = document.getElementsByClassName('links');
+            let body = document.querySelector('body');
+            let toggle = document.getElementById('toggle');
+            let links = document.getElementsByClassName('links');
 
-            toggle.onclick = function(){
+            function toggleGO(){
+
+
                 toggle.classList.toggle('active');
                 body.classList.toggle('active');
-                for (let i = 0; i < links.length; i++) {
-                    links[i].classList.toggle('active');
-                    console.log("here");
-                    links[i].style.visited.insertRule("links:visited{color:white;}");
+                console.log(links.length);
+
+                for (let i = 0; i <= links.length; i++) {
+                    links[i].style.color = "white";
+                    
                 }
+            
             }
+
+            // toggle.onclick = function(){
+            //     toggle.classList.toggle('active');
+            //     body.classList.toggle('active');
+                
+            //     for (let i = 0; i <= links.length; i++) {
+                    
+            //         links[0].sty
+            //     }
+
+               
+            // }
         </script>
     </body>
 </html>

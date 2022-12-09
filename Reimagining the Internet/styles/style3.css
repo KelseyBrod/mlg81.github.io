@@ -1,0 +1,233 @@
+
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-image: url("../images/Background\ Map.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.sidepanel {
+    position:relative;
+    height:100vh;
+    background-image: url("../images/Side\ Panel\ 2.png");
+    background-size: cover;
+    width:400px;
+    min-width:100px;
+    margin-left:0;
+    z-index:2;
+    font-size:1em;
+    line-height:1.5em;
+    color:#f1f1f1;
+}
+
+.sidepanel:before {
+    content:'';
+    position:absolute;
+    height:100vh;
+    width:10px;
+    top:0;
+    left:100%;
+    background-image:linear-gradient(to right,#bdbdbd,rgba(223, 223, 223, 0.2) 8px);
+    z-index:1;
+}
+
+.control {
+    position:absolute;
+    width:25px;
+    height:50px;
+    border-radius:15%;
+    font-size:10px;
+    background-color:#f0f0f0;
+    background-image:linear-gradient(to right,#bdbdbd,rgba(223, 223, 223, 0.2) 8px);
+    color:#39393a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top:calc(50% - 22px);
+    left:calc(100% - -1px);
+    z-index:1;
+    cursor:pointer;
+}
+
+.tutorial {
+    position:absolute;
+    width:350px;
+    height:90px;
+    border-radius:10px;
+    font-size:14px;
+    padding:15px;
+    background-color:rgb(51,112,231);
+    color:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top:calc(17%);
+    left:calc(100% + 10px);
+    z-index:1;  
+    box-shadow: 0px 0px 15px 5px rgba(201, 250, 211, 0.75);
+}
+
+.tutorial2 {
+    position:absolute;
+    width:430px;
+    height:100px;
+    border-radius:10px;
+    font-size:14px;
+    padding:15px;
+    background-color:rgb(51,112,231);
+    color:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    top:calc(67%);
+    left:calc(100% + 10px);
+    z-index:1;  
+    box-shadow: 0px 0px 15px 5px rgba(201, 250, 211, 0.75);
+}
+
+.fa-chevron-left {
+    margin-right:5px;
+}
+
+.fa-chevron-right {
+    margin-left:5px;
+}
+
+.hide {
+    display:none;
+}
+
+.back{
+    font-size: 18px;
+    color: white;
+    padding: 20px 20px 20px 18px;
+    background-color:rgb(51,112,231);
+}
+
+a:visited{
+    color: white;
+}
+
+/* source code: https://www.cssscript.com/simple-5-star-rating-system-with-css-and-html-radios/? */
+
+
+div.stars {
+    width: 400px;
+    height: 50px;
+    padding: 68px 100px 30px 20px;
+}
+
+input.star { 
+    display: none;
+}
+
+label.star {
+    float: right;
+    padding: 9px;
+    font-size: 25px;
+    color: rgb(150, 150, 150);
+    transition: all .2s;
+    background-color: white;
+}
+
+input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: rgb(235,162,53);
+    transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+    color: rgb(235,162,53);
+}
+
+input.star-1:checked ~ label.star:before { 
+    color: rgb(235,162,53); 
+}
+
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+}
+
+.seating{
+    padding: 390px 0px 300px 0px;
+}
+
+.view-seating-button{
+    background-color:rgb(199, 199, 199,0);
+    color: rgb(51,112,231);
+    font-size: 13px;
+    width: 400px;
+    height: 60px;
+}
+
+.view-seating-button:hover {
+    background-color:rgb(199, 199, 199,0.2);
+   }
+
+
+@media only screen and (max-height: 800px) {
+    .sidepanel {
+        position:relative;
+        height:100vh;
+        background-image: url("../images/Side\ Panel\ 2.png");
+        background-size: cover;
+        width:350px;
+        min-width:100px;
+        margin-left:0;
+        z-index:2;
+        font-size:1em;
+        line-height:1.5em;
+        color:#f1f1f1;
+    }
+
+    .sidepanel:before {
+        content:'';
+        position:absolute;
+        height:100vh;
+        width:10px;
+        top:0;
+        left:100%;
+        background-image:linear-gradient(to right,#bdbdbd,rgba(223, 223, 223, 0.2) 8px);
+        z-index:1;
+    }
+
+    div.stars {
+        width: 400px;
+        height: 50px;
+        padding: 50px 130px 30px 20px;
+    }
+    
+    input.star { 
+        display: none;
+    }
+    
+    label.star {
+        float: right;
+        padding: 9px;
+        font-size: 20px;
+        color: rgb(150, 150, 150);
+        transition: all .2s;
+        background-color: white;
+    }
+
+    .seating{
+        padding: 340px 0px 300px 0px;
+    }
+
+    .view-seating-button{
+        background-color:rgb(199, 199, 199,0);
+        color: rgb(51,112,231);
+        font-size: 13px;
+        width: 350px;
+        height: 45px;
+    }
+}

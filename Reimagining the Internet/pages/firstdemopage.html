@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <meta name="author" content ="Melinda Guo">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Accessible Places Redesign</title>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <link href="../styles/style2.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="sidepanel">
+            <div class="control">
+                <i class="fa fa-chevron-left" hidden="true"></i>
+                <i class="fa fa-chevron-right hide" hidden="true"></i>
+            </div>
+
+            <div class="tutorial" hidden="true">
+                <p><i class="fa fa-chevron-left"></i>Welcome! This button allows users to view accessibility ratings. Click to view more!</p>
+            </div>
+
+        <div class="all-ratings">
+            <a href="allratings.html">
+                <button class="view-ratings-button">Add & View Ratings</button>
+            </a>
+        </div>     
+
+        </div>
+
+        <script>   
+                //side panel tutorial: https://codepen.io/aydin4ik/pen/QqEKmq//            
+                $('.control').click(function() {
+                    let spWidth = $('.sidepanel').width();
+                    let spMarginLeft = parseInt($('.sidepanel').css('margin-left'),10);
+                    let w = (spMarginLeft >= 0 ) ? spWidth * -1 : 0;
+                    let cw = (w < 0) ? -w : spWidth- -1;
+                    $('.sidepanel').animate({
+                    marginLeft:w
+                    });
+                    $('.sidepanel span').animate({
+                        marginLeft:w
+                    });
+                    $('.control').animate({
+                        left:cw
+                    },function() {
+                        $('.fa-chevron-left').toggleClass('hide');
+                        $('.fa-chevron-right').toggleClass('hide');
+
+                        $('.tutorial').toggleClass('hide');
+
+                    });
+                });
+        </script>
+
+    </body>
+</html>

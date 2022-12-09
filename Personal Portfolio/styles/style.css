@@ -1,316 +1,315 @@
 *{
-    box-sizing:border-box;
-    margin: 15px;
-    padding: 0px;
-    border: 0px;
-    font-family: "Open Sans", sans-serif;
+  box-sizing:border-box;
+  margin: 15px;
+  padding: 0px;
+  border: 0px;
+  font-family: "Open Sans", sans-serif;
 
-    animation: fadeInAnimation ease 2s;
+  animation: fadeInAnimation ease 2s;
 }
 
 html{scroll-behavior:smooth}
 
 @keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-  /*inspired by Allison! https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+/*inspired by Allison! https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
 }
 
 div.twomode-toggle{
-  margin: 0px;
-  height: 20px;
+margin: 0px;
+height: 20px;
 }
 
 div#toggle.toggle-item{
-  margin:0px;
+margin:0px;
 }
 
 .twomode-toggle{
-  display: flex;
+display: flex;
 }
 
 img{
-  margin: 5px 10px;
+margin: 5px 10px;
 }
 
 .toggle-item{
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  flex: 0 1 50px;
+margin: 0px;
+padding: 0px;
+border: 0px;
+flex: 0 1 50px;
 }
 
 body{
-  background: white;
-  color: black;
-  transition: 0.5s;
+background: white;
+color: black;
+transition: 0.5s;
 }
 
 
 body.active{
-  background:rgb(16, 16, 16);
-  color: white;
-  transition: 0.5s;
+background:rgb(16, 16, 16);
+color: white;
+transition: 0.5s;
 }
 
 nav{
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  display: flex;
-  top:0px;
-  width: 100%;
-  overflow: auto;
-  height: auto;
+margin: 0px;
+padding: 0px;
+border: 0px;
+display: flex;
+top:0px;
+width: 100%;
+overflow: auto;
+height: auto;
 }
 
 .left-links{
-  flex:1 1 200px;
+flex:1 1 200px;
 }
 
 .links {
-  display: inline-block;
-  text-align: center;
-  padding: 0px 25px 25px 12px;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: normal;
+display: inline-block;
+text-align: center;
+padding: 2px 12px 2px 12px;
+margin: 0 12px 0 12px;
+text-decoration: none;
+font-size: 17px;
+font-weight: normal;
+color: black;
 }
-
-.links .active{
-  color:white;
-}
-
-/* .links:visited{
-  color: black;
-} */
 
 .links .active:visited{
-  color: white;
-}
-
-#selected{
-  color:rgb(164, 100, 100);
-}
-
-.links:hover {
   color: rgb(164, 100, 100);
 }
 
+#selected{
+color:rgb(164, 100, 100);
+}
+
+.links:hover {
+color: rgb(164, 100, 100);
+border: 1px solid white;
+}
+
+#hovertest:hover:a{
+color: rgb(164, 100, 100);
+}
+
 .intro {
-    padding: 70px 0px 90px 0px;
-    text-align: center;
-    font-size: 14px;
-    line-height: .75em;
+  padding: 70px 0px 90px 0px;
+  text-align: center;
+  font-size: 14px;
+  line-height: .75em;
 }
 
 #landing-poppins{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  letter-spacing: .2em;
-  font-size: 50px;
-  line-height: 2em;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+letter-spacing: .2em;
+font-size: 50px;
+line-height: 2em;
 }
 
 #poppins{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 #breathing{
-    font-family: 'Breathing Personal Use', sans-serif;
-    font-size: 25px;
-    line-height: 2em;
+  font-family: 'Breathing Personal Use', sans-serif;
+  font-size: 25px;
+  line-height: 2em;
 }
 
 svg {
-  width: 30px;
-  height: 30px;
+width: 30px;
+height: 30px;
 }
 
 svg:hover {
-  fill: rgb(135, 60, 60);
+fill: rgb(135, 60, 60);
 }
 
 #playground{
-   text-align: center;
-   font-family: 'Libre Caslon Text', serif;
-   font-size: 50px;
-   font-weight:300;
-   line-height: 2em;
-   padding-bottom: 40px;
+ text-align: center;
+ font-family: 'Libre Caslon Text', serif;
+ font-size: 50px;
+ font-weight:300;
+ line-height: 2em;
+ padding-bottom: 40px;
 }
 
 .headshot{
-   float: left;
-   padding: 0px 50px 0px 130px;
+ float: left;
+ padding: 0px 50px 0px 130px;
 }
 
 .about{
-   padding: 15px 130px 0px 0px;
-   font-size: 16px;
-   line-height: 2em;
+ padding: 15px 130px 0px 0px;
+ font-size: 16px;
+ line-height: 2em;
 }
 
 .librecaslon{
-   font-family: 'Libre Caslon Text', serif;
-   font-size: 50px;
-   font-weight:300;
-   line-height: 2em;
-   }
+ font-family: 'Libre Caslon Text', serif;
+ font-size: 50px;
+ font-weight:300;
+ line-height: 2em;
+ }
 
 .name{
-   color: rgb(164, 100, 100);
-   font-family: 'Libre Caslon Text', serif;
-   font-size: 50px;
-   font-weight:300;
-   line-height: 2em;
+ color: rgb(164, 100, 100);
+ font-family: 'Libre Caslon Text', serif;
+ font-size: 50px;
+ font-weight:300;
+ line-height: 2em;
 }
 
 .quote{
-   font-weight: bold;
-   line-height: 2em;
+ font-weight: bold;
+ line-height: 2em;
 }
 
 /* main page grid !! */
 
 .project-img {
-  width: 100%; 
-  height: auto;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
- }
+width: 100%; 
+height: auto;
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
 
- h2 {
-   margin-bottom: .5em;
- }
+h2 {
+ margin-bottom: .5em;
+}
 
- .grid-container {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-   margin: 0px;
-   padding: 0px;
-   border: 0px;
- }
+.grid-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
+}
+
+
+/* hover styles */
+.project {
+ position: relative;
+}
+
+.project-image {
+ line-height: 0;
+ overflow: hidden;
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
+}
+
+.project-image img {
+ filter: blur(0px);
+ transition: filter 0.3s ease-in;
+ transform: scale(1.1);
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
+}
+
+.project-title {
+ font-size: 1.5em;
+ font-weight: bold;
+ text-decoration: none;
+ z-index: 1;
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ transition: opacity .5s;
+ background: rgba(65, 65, 65, 0.9);
+ color: white;
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
  
- 
- /* hover styles */
- .project {
-   position: relative;
- }
- 
- .project-image {
-   line-height: 0;
-   overflow: hidden;
-   margin: 0px;
-   padding: 0px;
-   border: 0px;
- }
- 
- .project-image img {
-   filter: blur(0px);
-   transition: filter 0.3s ease-in;
-   transform: scale(1.1);
-   margin: 0px;
-   padding: 0px;
-   border: 0px;
- }
- 
- .project-title {
-   font-size: 1.5em;
-   font-weight: bold;
-   text-decoration: none;
-   z-index: 1;
-   position: absolute;
-   height: 100%;
-   width: 100%;
-   top: 0;
-   left: 0;
-   opacity: 0;
-   transition: opacity .5s;
-   background: rgba(65, 65, 65, 0.9);
-   color: white;
-   margin: 0px;
-   padding: 0px;
-   border: 0px;
-   
-   /* position text in middle*/
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- 
- .project:hover .project-title {
-   opacity: 1;
- }
- 
- .project:hover .project-image img {
-   filter: blur(2px);
- }
- 
+ /* position text in middle*/
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.project:hover .project-title {
+ opacity: 1;
+}
+
+.project:hover .project-image img {
+ filter: blur(2px);
+}
+
 /* banner */
 div.banner{
-  margin: 0px;
+margin: 0px;
 }
 
 /*photo gallery*/
 div.gallery#gallery{
-  margin: auto;
-  width: 100%;
+margin: auto;
+width: 100%;
 }
 
 /*dark mode toggle*/
 
 #toggle{
-  position:relative;
-  display: block;
-  margin: 0px 45px;
-  padding: 0px;
-  border: 30px;
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 25px;
-  border-radius: 25px;
-  background: rgb(200, 200, 200);
-  transition: 0.5s;
-  cursor: pointer;
+position:relative;
+display: block;
+margin: 0px 45px;
+padding: 0px;
+border: 30px;
+position: relative;
+display: block;
+width: 50px;
+height: 25px;
+border-radius: 25px;
+background: rgb(200, 200, 200);
+transition: 0.5s;
+cursor: pointer;
 }
 
 #toggle .active{
-  margin: 0px 45px;
-  padding: 0px;
-  left: 25px;
-  background: rgb(100, 100, 100);
-  transition: 0.5s;
+margin: 0px 45px;
+padding: 0px;
+left: 25px;
+background: rgb(100, 100, 100);
+transition: 0.5s;
 }
 
 #toggle .indicator{
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  background: rgb(255, 255, 255);
-  border-radius: 50%;
-  transform: scale(0.9);
-  transition: 0.5s;
+margin: 0px;
+padding: 0px;
+border: 0px;
+position: absolute;
+top: 0;
+left: 0;
+width: 25px;
+height: 25px;
+background: rgb(255, 255, 255);
+border-radius: 50%;
+transform: scale(0.9);
+transition: 0.5s;
 }
 
 #toggle.active .indicator{
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  left: 25px;
-  background: rgb(90, 90, 90);
-  transition: 0.5s;
+margin: 0px;
+padding: 0px;
+border: 0px;
+left: 25px;
+background: rgb(90, 90, 90);
+transition: 0.5s;
 } 
