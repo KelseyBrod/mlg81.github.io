@@ -39,13 +39,14 @@ function countDown() {
 
     //change event title to final message with icons
     if (days==0, hours==0, minutes==0, seconds==0) {
+        document.getElementById('timer').style.backgroundImage="url(images/effects/confetti.webp)";
         title.innerHTML = message;
 
         var prevImage = document.getElementById("image");
         if(prevImage != null) {
             prevImage.parentNode.removeChild(prevImage);
         }
-    
+
         //add icons 
         var img = document.createElement('img'); 
         img.style.width = '40px';
@@ -68,6 +69,7 @@ function countDown() {
             img.src = "images/icons/happyemoji.png"
             document.getElementById('title').append("          ",img);
         }  
+
     }
 }
 
