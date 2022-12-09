@@ -29,7 +29,7 @@
         <!-- nav bar -->
         <nav>
             <div class="left-links">
-                <a class="links" href="#">Melinda</a>
+                <a class="links" href="#">Melinda Guo</a>
             </div>
             <div class="right-links">
                 <a class="links" id="selected" href="#">Work</a>
@@ -101,35 +101,21 @@
         <script>
             // dark and light mode toggle tutorial:  https://www.youtube.com/watch?v=gzCUq_VQ7Y8 
 
-            let body = document.querySelector('body');
-            let toggle = document.getElementById('toggle');
-            let links = document.getElementsByClassName('links');
+            const body = document.querySelector('body');
+            const linksarray = [];
+            const toggle = document.getElementById('toggle');
+            const links = document.getElementsByClassName('links');
 
-            function toggleGO(){
-
-
+            toggle.onclick = function(){
                 toggle.classList.toggle('active');
                 body.classList.toggle('active');
-                console.log(links.length);
-
-                for (let i = 0; i <= links.length; i++) {
-                    links[i].style.color = "white";
-                    
+                for (let i = 0; i < links.length; i++) {
+                    links[i].classList.toggle('active');
+                    console.log("here");
                 }
-            
+
             }
-
-            // toggle.onclick = function(){
-            //     toggle.classList.toggle('active');
-            //     body.classList.toggle('active');
-                
-            //     for (let i = 0; i <= links.length; i++) {
-                    
-            //         links[0].sty
-            //     }
-
-               
-            // }
+            
         </script>
     </body>
 </html>

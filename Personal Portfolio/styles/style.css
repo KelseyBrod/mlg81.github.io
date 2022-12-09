@@ -80,11 +80,18 @@ margin: 0 12px 0 12px;
 text-decoration: none;
 font-size: 17px;
 font-weight: normal;
-color: black;
 }
 
+.links .active{
+  color:white;
+}
+
+.links:visited{
+  color: rgb(123, 123, 123);
+} 
+
 .links .active:visited{
-  color: rgb(164, 100, 100);
+  color: white;
 }
 
 #selected{
@@ -92,8 +99,7 @@ color:rgb(164, 100, 100);
 }
 
 .links:hover {
-color: rgb(164, 100, 100);
-border: 1px solid white;
+  color: rgb(164, 100, 100);
 }
 
 #hovertest:hover:a{
